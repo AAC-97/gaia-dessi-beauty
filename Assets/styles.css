@@ -239,6 +239,11 @@ h3 { font-size: 1.3rem; line-height: 1.2; }
   background: #25d366;
   box-shadow: var(--shadow);
 }
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
 .footer {
   display: flex;
   justify-content: space-between;
