@@ -234,14 +234,14 @@ h3 { font-size: 1.3rem; line-height: 1.2; }
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  color: white;
+  color: #fffaf4;
   font-weight: 900;
   background: #25d366;
   box-shadow: var(--shadow);
 }
 .whatsapp-float svg {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   fill: currentColor;
 }
 .footer {
