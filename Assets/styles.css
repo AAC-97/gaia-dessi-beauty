@@ -252,13 +252,22 @@ h3 { font-size: 1.3rem; line-height: 1.2; }
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 18px;
+}
 
 @media (max-width: 860px) {
   .site-header { align-items: flex-start; flex-direction: column; }
   .nav { width: 100%; }
   .hero { min-height: 620px; }
   .split, .cards, .contact { grid-template-columns: 1fr; }
-  .footer { flex-direction: column; }
+  .footer, .footer-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 @media (max-width: 540px) {
   .nav a { font-size: 0.9rem; }
