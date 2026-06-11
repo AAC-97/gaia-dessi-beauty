@@ -47,7 +47,7 @@ const translations = {
     waxing: "Epilazione",
     bodyTitle: "Mani, piedi e beauty care",
     bodyText: "Servizi professionali per mani e piedi curati, eleganti e ordinati, con attenzione alla precisione e alla durata del risultato.",
-    custom: "Percorsi personalizzati",
+    custom: "Trattamenti personalizzati",
     homeService: "Servizi a domicilio su prenotazione",
     manicure: "Manicure professionale",
     pedicure: "Pedicure professionale",
