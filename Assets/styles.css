@@ -320,6 +320,9 @@ h3 { font-size: 1.3rem; line-height: 1.2; }
 .video-tile video {
   aspect-ratio: 9 / 16;
 }
+.video-brighten {
+  filter: brightness(1.28) contrast(1.08) saturate(1.04);
+}
 .video-copy {
   padding: 18px 20px 20px;
 }
