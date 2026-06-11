@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#f7efe5">
     <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="Assets/styles.css?v=20260612-video-gallery">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -239,21 +239,33 @@
 
       <section class="section visual-section" id="visual">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="visualEyebrow">Atmosfera</p>
-          <h2 data-i18n="visualTitle">Un’esperienza beauty curata anche nei dettagli.</h2>
+          <p class="eyebrow" data-i18n="visualEyebrow">Video reali</p>
+          <h2 data-i18n="visualTitle">Guarda Gaia al lavoro: gesti precisi, ritmo e cura.</h2>
         </div>
         <div class="visual-grid">
           <figure class="visual-main">
-            <img src="Assets/images/gaia-hero.png" loading="lazy" alt="Atmosfera elegante e rilassante per trattamenti beauty e massaggi">
-            <figcaption data-i18n="visualCaption">Ambiente, ordine, prodotti e gesti professionali contribuiscono alla sensazione di benessere prima, durante e dopo il trattamento.</figcaption>
+            <video controls playsinline preload="none" poster="Assets/videos/posters/gaia-working-01.jpg" aria-label="Video di Gaia Dessi durante un trattamento professionale">
+              <source src="Assets/videos/gaia-working-01.m4v" type="video/mp4">
+            </video>
+            <figcaption data-i18n="visualCaption">Brevi clip reali mostrano la manualità e l’attenzione durante i trattamenti, dal massaggio alla preparazione del servizio.</figcaption>
           </figure>
-          <article class="visual-card">
-            <h3 data-i18n="visualCard1Title">Igiene e comfort</h3>
-            <p data-i18n="visualCard1Text">Ogni trattamento richiede attenzione all’ambiente, agli strumenti e alla sensazione di sicurezza della persona.</p>
+          <article class="visual-card video-tile">
+            <video controls playsinline preload="none" poster="Assets/videos/posters/gaia-working-02.jpg" aria-label="Video di dettaglio della manualità di Gaia Dessi">
+              <source src="Assets/videos/gaia-working-02.m4v" type="video/mp4">
+            </video>
+            <div class="video-copy">
+              <h3 data-i18n="visualCard1Title">Manualità professionale</h3>
+              <p data-i18n="visualCard1Text">Movimenti controllati, ascolto del corpo e attenzione al comfort rendono il trattamento più sicuro e rilassante.</p>
+            </div>
           </article>
-          <article class="visual-card">
-            <h3 data-i18n="visualCard2Title">Dettagli riconoscibili</h3>
-            <p data-i18n="visualCard2Text">La gallery potrà essere aggiornata con foto e video reali appena disponibili, mantenendo un’immagine coerente e professionale.</p>
+          <article class="visual-card video-tile">
+            <video controls playsinline preload="none" poster="Assets/videos/posters/gaia-working-03.jpg" aria-label="Video di un trattamento beauty curato nei dettagli">
+              <source src="Assets/videos/gaia-working-03.m4v" type="video/mp4">
+            </video>
+            <div class="video-copy">
+              <h3 data-i18n="visualCard2Title">Cura visibile nei dettagli</h3>
+              <p data-i18n="visualCard2Text">Ordine, delicatezza e precisione comunicano subito la qualità dell’esperienza prima ancora della prenotazione.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -374,6 +386,6 @@
         <a href="https://albertocogoni.com/" target="_blank" rel="noreferrer">Sito realizzato da Alberto Cogoni</a>
       </span>
     </footer>
-    <script src="Assets/script.js"></script>
+    <script src="Assets/script.js?v=20260612-video-gallery"></script>
   </body>
 </html>
