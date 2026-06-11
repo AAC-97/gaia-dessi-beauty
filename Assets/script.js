@@ -239,13 +239,3 @@ function setLang(lang) {
 langButtons.forEach((button) => button.addEventListener("click", () => setLang(button.dataset.lang)));
 setLang(defaultLang);
 document.getElementById("year")?.append(new Date().getFullYear());
-
-document.querySelector("form")?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const messages = {
-    it: "Grazie, Gaia ti risponderà appena possibile.",
-    en: "Thank you, Gaia will reply as soon as possible.",
-    es: "Gracias, Gaia te responderá lo antes posible."
-  };
-  alert(messages[document.documentElement.lang] || messages.it);
-});
