@@ -63,7 +63,8 @@ const translations = {
     methodStep3Text: "Prenoti in modo rapido tramite WhatsApp, telefono o form.",
     visualEyebrow: "Video reali",
     visualTitle: "Guarda Gaia al lavoro: gesti precisi, ritmo e cura.",
-    visualCaption: "Brevi clip reali mostrano la manualità e l’attenzione durante i trattamenti, dal massaggio alla preparazione del servizio.",
+    visualMainTitle: "Massaggio professionale",
+    visualCaption: "Gaia durante un trattamento corpo: ritmo, pressione e attenzione al comfort rendono l’esperienza più rilassante e sicura.",
     visualCard1Title: "Manualità professionale",
     visualCard1Text: "Movimenti controllati, ascolto del corpo e attenzione al comfort rendono il trattamento più sicuro e rilassante.",
     visualCard2Title: "Cura visibile nei dettagli",
@@ -174,7 +175,8 @@ const translations = {
     methodStep3Text: "Book quickly via WhatsApp, phone or form.",
     visualEyebrow: "Real videos",
     visualTitle: "Watch Gaia at work: precise gestures, rhythm and care.",
-    visualCaption: "Short real clips show technique and attention during treatments, from massage to service preparation.",
+    visualMainTitle: "Professional massage",
+    visualCaption: "Gaia during a body treatment: rhythm, pressure and attention to comfort make the experience more relaxing and safe.",
     visualCard1Title: "Professional technique",
     visualCard1Text: "Controlled movements, body awareness and attention to comfort make each treatment safer and more relaxing.",
     visualCard2Title: "Care you can see",
@@ -285,7 +287,8 @@ const translations = {
     methodStep3Text: "Reservas rápidamente por WhatsApp, teléfono o formulario.",
     visualEyebrow: "Videos reales",
     visualTitle: "Mira a Gaia trabajando: gestos precisos, ritmo y cuidado.",
-    visualCaption: "Clips reales breves muestran la técnica y la atención durante los tratamientos, desde el masaje hasta la preparación del servicio.",
+    visualMainTitle: "Masaje profesional",
+    visualCaption: "Gaia durante un tratamiento corporal: ritmo, presión y atención al confort hacen que la experiencia sea más relajante y segura.",
     visualCard1Title: "Técnica profesional",
     visualCard1Text: "Movimientos controlados, escucha del cuerpo y atención al confort hacen que cada tratamiento sea más seguro y relajante.",
     visualCard2Title: "Cuidado visible en los detalles",
@@ -353,3 +356,12 @@ function setLang(lang) {
 langButtons.forEach((button) => button.addEventListener("click", () => setLang(button.dataset.lang)));
 setLang(defaultLang);
 document.getElementById("year")?.append(new Date().getFullYear());
+
+const videos = document.querySelectorAll("video");
+videos.forEach((video) => {
+  video.addEventListener("play", () => {
+    videos.forEach((otherVideo) => {
+      if (otherVideo !== video) otherVideo.pause();
+    });
+  });
+});
