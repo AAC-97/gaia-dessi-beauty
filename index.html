@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gaia Dessi Beauty | Massaggi e trattamenti beauty a Cagliari</title>
-    <meta name="description" content="Massaggi, trattamenti viso e corpo, manicure, pedicure e consulenza skincare a Cagliari. Esperienza beauty personalizzata con cura da SPA luxury.">
-    <meta property="og:title" content="Gaia Dessi Beauty | Massaggi e trattamenti beauty a Cagliari">
-    <meta property="og:description" content="Massaggi, trattamenti viso e corpo, manicure, pedicure e consulenza skincare a Cagliari. Esperienza beauty personalizzata con cura da SPA luxury.">
+    <title>Estetista e massaggi a Cagliari | Gaia Dessi Beauty</title>
+    <meta name="description" content="Gaia Dessi Beauty: estetista e massage specialist a Cagliari. Massaggi, trattamenti viso e corpo, manicure, pedicure, skincare e servizi a domicilio su prenotazione.">
+    <meta name="keywords" content="Gaia Dessi, Gaia Dessi Beauty, estetista Cagliari, massaggi Cagliari, trattamenti viso Cagliari, manicure Cagliari, pedicure Cagliari, skincare Cagliari">
+    <link rel="canonical" href="https://gaiadessibeauty.it/">
+    <meta property="og:title" content="Gaia Dessi Beauty | Estetista e massaggi a Cagliari">
+    <meta property="og:description" content="Massaggi, trattamenti viso e corpo, manicure, pedicure e skincare a Cagliari, con esperienza in SPA luxury e servizi a domicilio su prenotazione.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gaiadessibeauty.it/">
     <meta property="og:image" content="https://gaiadessibeauty.it/Assets/images/gaia-link-preview.png">
@@ -14,8 +16,8 @@
     <meta property="og:image:height" content="909">
     <meta property="og:image:alt" content="Gaia Dessi Beauty - Beauty & Massage Specialist a Cagliari">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Gaia Dessi Beauty | Massaggi e trattamenti beauty a Cagliari">
-    <meta name="twitter:description" content="Massaggi, trattamenti viso e corpo, manicure, pedicure e consulenza skincare a Cagliari. Esperienza beauty personalizzata con cura da SPA luxury.">
+    <meta name="twitter:title" content="Gaia Dessi Beauty | Estetista e massaggi a Cagliari">
+    <meta name="twitter:description" content="Trattamenti beauty, massaggi e skincare a Cagliari con cura professionale ed esperienza luxury SPA.">
     <meta name="twitter:image" content="https://gaiadessibeauty.it/Assets/images/gaia-link-preview.png">
     <meta name="theme-color" content="#f7efe5">
     <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
@@ -24,15 +26,74 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BeautySalon",
-        "name": "Gaia Dessi Beauty",
-        "description": "Massaggi, trattamenti viso e corpo, manicure, pedicure e consulenza skincare a Cagliari. Esperienza beauty personalizzata con cura da SPA luxury.",
-        "areaServed": "Cagliari",
-        "telephone": "+39 331 826 2797",
-        "email": "gaiadessi.io@gmail.com",
-        "openingHours": "Tu-Sa 08:00-20:00",
-        "url": "https://gaiadessibeauty.it/",
-        "sameAs": ["https://www.instagram.com/gaiadessi.beauty"]
+        "@graph": [
+          {
+            "@type": ["BeautySalon", "LocalBusiness"],
+            "@id": "https://gaiadessibeauty.it/#business",
+            "name": "Gaia Dessi Beauty",
+            "url": "https://gaiadessibeauty.it/",
+            "image": "https://gaiadessibeauty.it/Assets/images/gaia-link-preview.png",
+            "description": "Estetista e massage specialist a Cagliari. Massaggi, trattamenti viso e corpo, manicure, pedicure, skincare e servizi a domicilio su prenotazione.",
+            "telephone": "+39 331 826 2797",
+            "email": "gaiadessi.io@gmail.com",
+            "priceRange": "€€",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Cagliari",
+              "addressRegion": "Sardegna",
+              "addressCountry": "IT"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Cagliari" },
+              { "@type": "AdministrativeArea", "name": "Sardegna" }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "08:00",
+                "closes": "20:00"
+              }
+            ],
+            "availableLanguage": ["it", "en", "es"],
+            "sameAs": ["https://www.instagram.com/gaiadessi.beauty"],
+            "makesOffer": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Massaggi a Cagliari" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trattamenti viso a Cagliari" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trattamenti corpo a Cagliari" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure e pedicure professionale" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consulenza skincare" } }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://gaiadessibeauty.it/#website",
+            "name": "Gaia Dessi Beauty",
+            "url": "https://gaiadessibeauty.it/",
+            "publisher": { "@id": "https://gaiadessibeauty.it/#business" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://gaiadessibeauty.it/#faq-schema",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Dove offre i trattamenti Gaia Dessi Beauty?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Gaia Dessi Beauty offre trattamenti beauty e massaggi a Cagliari, con servizi a domicilio disponibili su prenotazione." }
+              },
+              {
+                "@type": "Question",
+                "name": "Come posso scegliere il trattamento più adatto?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Puoi scrivere su WhatsApp o inviare una richiesta dal form spiegando esigenza, obiettivo e preferenza: Gaia ti aiuterà a scegliere il percorso più adatto." }
+              },
+              {
+                "@type": "Question",
+                "name": "Sono disponibili buoni regalo?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Sì, è possibile richiedere buoni regalo per massaggi, trattamenti viso, manicure, pedicure o percorsi beauty personalizzati." }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -45,7 +106,9 @@
       <nav class="nav" aria-label="Navigazione principale">
         <a href="#about" data-i18n="navAbout">Chi sono</a>
         <a href="#treatments" data-i18n="navTreatments">Trattamenti</a>
+        <a href="#paths" data-i18n="navPaths">Percorsi</a>
         <a href="#gift" data-i18n="navGift">Buoni regalo</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
         <a href="#booking" data-i18n="navBooking">Prenota</a>
       </nav>
       <div class="header-actions" aria-label="Selettore lingua">
@@ -60,12 +123,13 @@
         <img class="hero-bg" src="Assets/images/gaia-hero.png" alt="Cabina elegante per trattamenti estetici e massaggi a Cagliari">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="availability"><span></span><span data-i18n="availability">Cagliari · Esperienza luxury SPA · Servizi a domicilio su prenotazione</span></p>
-          <h1 data-i18n="heroTitle">La tua esperienza beauty su misura a Cagliari.</h1>
-          <p class="hero-subtitle" data-i18n="heroSubtitle">Massaggi, trattamenti viso e corpo, manicure, pedicure e skincare personalizzata, con la cura e l’attenzione di una SPA luxury.</p>
+          <p class="availability"><span></span><span data-i18n="availability">Cagliari · Estetista e massage specialist · Domicilio su prenotazione</span></p>
+          <h1 data-i18n="heroTitle">Estetista e massaggi a Cagliari con esperienza luxury SPA.</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">Trattamenti viso, corpo, manicure, pedicure e skincare personalizzata per chi cerca cura, benessere e risultati visibili.</p>
           <div class="hero-actions">
             <a class="button primary" href="https://wa.me/393318262797?text=Ciao%20Gaia%2C%20vorrei%20prenotare%20un%20trattamento" target="_blank" rel="noreferrer" data-i18n="whatsapp">Prenota su WhatsApp</a>
             <a class="button secondary" href="#treatments" data-i18n="seeTreatments">Scopri i trattamenti</a>
+            <a class="button secondary" href="https://wa.me/393318262797?text=Ciao%20Gaia%2C%20vorrei%20capire%20quale%20trattamento%20%C3%A8%20pi%C3%B9%20adatto%20a%20me" target="_blank" rel="noreferrer" data-i18n="askAdvice">Chiedi consiglio</a>
           </div>
         </div>
       </section>
@@ -73,42 +137,58 @@
       <section class="section split" id="about">
         <div>
           <p class="eyebrow" data-i18n="aboutEyebrow">Chi sono</p>
-          <h2 data-i18n="aboutTitle">Esperienza luxury SPA, delicatezza e attenzione reale alla persona.</h2>
+          <h2 data-i18n="aboutTitle">Dalla SPA luxury ai trattamenti personalizzati a Cagliari.</h2>
           <figure class="portrait">
-            <img src="Assets/images/gaia-profile.jpeg" alt="Ritratto professionale di Gaia Dessi, beauty e massage specialist a Cagliari">
+            <img src="Assets/images/gaia-profile.jpeg" alt="Ritratto professionale di Gaia Dessi, estetista e massage specialist a Cagliari">
             <figcaption data-i18n="portraitCaption">Gaia Dessi · Beauty & Massage Specialist</figcaption>
           </figure>
         </div>
         <div class="prose">
-          <p data-i18n="aboutP1">Sono Gaia, estetista e massage specialist a Cagliari.</p>
-          <p data-i18n="aboutP2">Negli anni ho lavorato in SPA di alto livello e hotel 5 stelle, maturando un approccio basato su accoglienza, precisione, manualità e cura dei dettagli.</p>
-          <p data-i18n="aboutP3">Mi occupo di massaggi, trattamenti viso e corpo, manicure, pedicure professionali, tecnica russa, semipermanente e consulenza skincare, costruendo ogni percorso sulle esigenze reali della persona.</p>
-          <p data-i18n="aboutP4">Il mio obiettivo è offrirti un’esperienza beauty personalizzata, capace di unire benessere, risultati visibili e un momento autentico di cura per te.</p>
+          <p data-i18n="aboutP1">Sono Gaia, estetista specializzata e massage specialist a Cagliari.</p>
+          <p data-i18n="aboutP2">Ho maturato esperienza in SPA di alto livello, resort e hotel cinque stelle, inclusi contesti luxury come Leading Hotels e Hilton.</p>
+          <p data-i18n="aboutP3">Mi occupo di massaggi, trattamenti viso e corpo, manicure, pedicure professionali, tecnica russa, semipermanente e consulenza skincare.</p>
+          <p data-i18n="aboutP4">Ogni trattamento nasce dall’ascolto: esigenze della pelle, tensioni, abitudini, obiettivi e desiderio di vivere un momento autentico di cura.</p>
+        </div>
+      </section>
+
+      <section class="section split local-seo" id="esthetician-cagliari">
+        <div>
+          <p class="eyebrow" data-i18n="localSeoEyebrow">Beauty a Cagliari</p>
+          <h2 data-i18n="localSeoTitle">Se cerchi un’estetista a Cagliari, parti da un trattamento davvero su misura.</h2>
+        </div>
+        <div class="prose">
+          <p data-i18n="localSeoText">Gaia Dessi Beauty è pensato per chi cerca massaggi a Cagliari, trattamenti viso e corpo, manicure, pedicure e skincare professionale con un approccio elegante, attento e personalizzato.</p>
+          <ul class="seo-list">
+            <li data-i18n="localSeoPoint1">Massaggi rilassanti, drenanti, decontratturanti e rituali corpo.</li>
+            <li data-i18n="localSeoPoint2">Trattamenti viso, pulizia, idratazione, anti-age e consulenza skincare.</li>
+            <li data-i18n="localSeoPoint3">Manicure, pedicure, tecnica russa e semipermanente.</li>
+            <li data-i18n="localSeoPoint4">Servizi beauty a domicilio a Cagliari su prenotazione.</li>
+          </ul>
         </div>
       </section>
 
       <section class="section" id="expertise">
         <p class="eyebrow" data-i18n="expertiseEyebrow">Esperienza</p>
-        <h2 data-i18n="expertiseTitle">Formazione specializzata e lavoro in contesti luxury.</h2>
+        <h2 data-i18n="expertiseTitle">Formazione specializzata e lavoro in contesti wellness di alto livello.</h2>
         <div class="cards expertise-grid">
           <article class="card">
-            <h3 data-i18n="luxuryTitle">SPA e hotel 5 stelle</h3>
-            <p data-i18n="luxuryText">Esperienza in contesti wellness, resort e strutture di alto livello, dove ogni dettaglio contribuisce alla qualità dell’esperienza.</p>
+            <h3 data-i18n="luxuryTitle">SPA, resort e hotel 5 stelle</h3>
+            <p data-i18n="luxuryText">Esperienza in strutture luxury e wellness dove accoglienza, igiene, precisione e qualità del servizio sono fondamentali.</p>
           </article>
           <article class="card">
-            <h3 data-i18n="completeTreatmentsTitle">Trattamenti personalizzati</h3>
+            <h3 data-i18n="completeTreatmentsTitle">Trattamenti completi</h3>
             <p data-i18n="completeTreatmentsText">Massaggi professionali, trattamenti viso e corpo, manicure, pedicure, tecnica russa, semipermanente e percorsi beauty su misura.</p>
           </article>
           <article class="card">
-            <h3 data-i18n="skincareTitle">Skincare e consulenza</h3>
-            <p data-i18n="skincareText">Supporto nella scelta dei trattamenti e della beauty routine più adatta, con attenzione alla pelle, alle abitudini e agli obiettivi della cliente.</p>
+            <h3 data-i18n="skincareTitle">Skincare e relazione cliente</h3>
+            <p data-i18n="skincareText">Supporto nella scelta dei prodotti e dei trattamenti più adatti, con attenzione alla pelle, alle abitudini e alla continuità dei risultati.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="treatments">
         <p class="eyebrow" data-i18n="treatmentsEyebrow">Trattamenti</p>
-        <h2 data-i18n="treatmentsTitle">Scegli il trattamento più adatto a te.</h2>
+        <h2 data-i18n="treatmentsTitle">Massaggi, estetica e skincare professionale a Cagliari.</h2>
         <p class="prose" data-i18n="treatmentsIntro">Ogni servizio viene pensato per rispondere alle tue esigenze: relax, drenaggio, leggerezza, cura della pelle, benessere del corpo o beauty care quotidiana.</p>
         <div class="cards treatment-grid">
           <article class="card">
@@ -150,6 +230,97 @@
         </div>
       </section>
 
+      <section class="section" id="paths">
+        <p class="eyebrow" data-i18n="pathsEyebrow">Percorsi</p>
+        <h2 data-i18n="pathsTitle">Scegli in base a ciò di cui hai bisogno oggi.</h2>
+        <div class="path-grid">
+          <article class="path-card">
+            <p class="meta" data-i18n="pathRelaxMeta">Relax e leggerezza</p>
+            <h3 data-i18n="pathRelaxTitle">Corpo più leggero</h3>
+            <p data-i18n="pathRelaxText">Ideale per gambe stanche, tensioni, gonfiore o bisogno di un momento di decompressione.</p>
+          </article>
+          <article class="path-card">
+            <p class="meta" data-i18n="pathFaceMeta">Viso e luminosità</p>
+            <h3 data-i18n="pathFaceTitle">Pelle più curata</h3>
+            <p data-i18n="pathFaceText">Per chi vuole migliorare idratazione, texture, luminosità e routine skincare quotidiana.</p>
+          </article>
+          <article class="path-card">
+            <p class="meta" data-i18n="pathHandsMeta">Mani e piedi</p>
+            <h3 data-i18n="pathHandsTitle">Beauty care preciso</h3>
+            <p data-i18n="pathHandsText">Manicure, pedicure, tecnica russa e semipermanente per un risultato ordinato ed elegante.</p>
+          </article>
+          <article class="path-card">
+            <p class="meta" data-i18n="pathHomeMeta">Su prenotazione</p>
+            <h3 data-i18n="pathHomeTitle">Servizio a domicilio</h3>
+            <p data-i18n="pathHomeText">Una soluzione comoda per ricevere trattamenti beauty e benessere a Cagliari, quando disponibile.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split band method-section" id="method">
+        <div>
+          <p class="eyebrow" data-i18n="methodEyebrow">Come funziona</p>
+          <h2 data-i18n="methodTitle">Prenotare è semplice, anche se non sai ancora quale trattamento scegliere.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <h3 data-i18n="methodStep1Title">Racconta cosa cerchi</h3>
+            <p data-i18n="methodStep1Text">Relax, drenaggio, pelle luminosa, mani curate o un regalo speciale.</p>
+          </li>
+          <li>
+            <span>2</span>
+            <h3 data-i18n="methodStep2Title">Ricevi un consiglio</h3>
+            <p data-i18n="methodStep2Text">Valutiamo insieme trattamento, durata indicativa e disponibilità.</p>
+          </li>
+          <li>
+            <span>3</span>
+            <h3 data-i18n="methodStep3Title">Conferma l’appuntamento</h3>
+            <p data-i18n="methodStep3Text">Prenoti in modo rapido tramite WhatsApp, telefono o form.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section visual-section" id="visual">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="visualEyebrow">Atmosfera</p>
+          <h2 data-i18n="visualTitle">Un’esperienza beauty curata anche nei dettagli.</h2>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-main">
+            <img src="Assets/images/gaia-hero.png" loading="lazy" alt="Atmosfera elegante e rilassante per trattamenti beauty e massaggi">
+            <figcaption data-i18n="visualCaption">Ambiente, ordine, prodotti e gesti professionali contribuiscono alla sensazione di benessere prima, durante e dopo il trattamento.</figcaption>
+          </figure>
+          <article class="visual-card">
+            <h3 data-i18n="visualCard1Title">Igiene e comfort</h3>
+            <p data-i18n="visualCard1Text">Ogni trattamento richiede attenzione all’ambiente, agli strumenti e alla sensazione di sicurezza della persona.</p>
+          </article>
+          <article class="visual-card">
+            <h3 data-i18n="visualCard2Title">Dettagli riconoscibili</h3>
+            <p data-i18n="visualCard2Text">La gallery potrà essere aggiornata con foto e video reali appena disponibili, mantenendo un’immagine coerente e professionale.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <p class="eyebrow" data-i18n="reviewsEyebrow">Fiducia</p>
+        <h2 data-i18n="reviewsTitle">Cosa apprezzano le clienti in un servizio beauty davvero curato.</h2>
+        <div class="review-grid">
+          <article class="review-card">
+            <h3 data-i18n="review1Title">Ascolto prima del trattamento</h3>
+            <p data-i18n="review1Text">Capire abitudini, pelle, tensioni e obiettivo rende il servizio più personale e utile.</p>
+          </article>
+          <article class="review-card">
+            <h3 data-i18n="review2Title">Manualità e precisione</h3>
+            <p data-i18n="review2Text">L’esperienza in contesti SPA aiuta a mantenere ritmo, delicatezza e cura del dettaglio.</p>
+          </article>
+          <article class="review-card">
+            <h3 data-i18n="review3Title">Risultato e continuità</h3>
+            <p data-i18n="review3Text">Il trattamento non è un gesto isolato: può diventare parte di una routine beauty più consapevole.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section split band" id="gift">
         <div>
           <p class="eyebrow" data-i18n="giftEyebrow">Buoni regalo</p>
@@ -157,16 +328,46 @@
         </div>
         <div class="prose">
           <p data-i18n="giftText">Un buono regalo Gaia Dessi Beauty è un pensiero elegante, personale e sempre apprezzato.</p>
-          <p data-i18n="giftText2">Puoi scegliere un trattamento specifico oppure un importo personalizzato, lasciando alla persona la libertà di vivere l’esperienza più adatta: un massaggio rilassante, un trattamento viso, una manicure, una pedicure o un percorso beauty su misura.</p>
-          <p data-i18n="giftText3">Perfetto per compleanni, anniversari, ricorrenze o per sorprendere qualcuno con un gesto di benessere.</p>
+          <p data-i18n="giftText2">Puoi scegliere un trattamento specifico oppure un importo personalizzato, lasciando alla persona la libertà di vivere l’esperienza più adatta.</p>
+          <div class="gift-grid">
+            <span data-i18n="giftOccasion1">Compleanni</span>
+            <span data-i18n="giftOccasion2">Anniversari</span>
+            <span data-i18n="giftOccasion3">Festa della mamma</span>
+            <span data-i18n="giftOccasion4">Regalo relax</span>
+          </div>
           <a class="button primary" href="https://wa.me/393318262797?text=Ciao%20Gaia%2C%20vorrei%20informazioni%20sui%20buoni%20regalo" target="_blank" rel="noreferrer" data-i18n="askGift">Richiedi un buono</a>
+        </div>
+      </section>
+
+      <section class="section split" id="faq">
+        <div>
+          <p class="eyebrow" data-i18n="faqEyebrow">FAQ</p>
+          <h2 data-i18n="faqTitle">Domande frequenti prima di prenotare.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary data-i18n="faq1Q">Dove offri i trattamenti?</summary>
+            <p data-i18n="faq1A">A Cagliari, con possibilità di servizi a domicilio su prenotazione e in base alla disponibilità.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2Q">Come scelgo il trattamento più adatto?</summary>
+            <p data-i18n="faq2A">Puoi scrivere su WhatsApp spiegando esigenza, obiettivo e preferenze: ti aiuterò a scegliere il percorso più indicato.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3Q">Posso regalare un trattamento?</summary>
+            <p data-i18n="faq3A">Sì, puoi richiedere un buono regalo per un trattamento specifico o per un importo personalizzato.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq4Q">Quanto dura un trattamento?</summary>
+            <p data-i18n="faq4A">Dipende dal servizio scelto. Al momento della richiesta ti verrà indicata una durata orientativa e la soluzione più adatta.</p>
+          </details>
         </div>
       </section>
 
       <section class="section contact" id="booking">
         <div>
           <p class="eyebrow" data-i18n="bookingEyebrow">Contatti</p>
-          <h2 data-i18n="bookingTitle">Prenota il tuo trattamento.</h2>
+          <h2 data-i18n="bookingTitle">Prenota il tuo trattamento beauty a Cagliari.</h2>
           <p data-i18n="bookingText">Scrivimi su WhatsApp per ricevere informazioni, verificare la disponibilità o scegliere insieme il trattamento più adatto a te.</p>
           <p data-i18n="bookingText2">Puoi anche compilare il form: ti risponderò appena possibile.</p>
           <div class="contact-links">
@@ -191,6 +392,17 @@
             <input type="email" name="email" autocomplete="email" required>
           </label>
           <label>
+            <span data-i18n="formTreatment">Trattamento di interesse</span>
+            <select name="treatment">
+              <option value="" data-i18n="formTreatmentPlaceholder">Seleziona un trattamento</option>
+              <option value="massaggio" data-i18n="formTreatmentMassage">Massaggio</option>
+              <option value="viso-skincare" data-i18n="formTreatmentFace">Viso / skincare</option>
+              <option value="manicure-pedicure" data-i18n="formTreatmentHands">Manicure / pedicure</option>
+              <option value="buono-regalo" data-i18n="formTreatmentGift">Buono regalo</option>
+              <option value="consiglio" data-i18n="formTreatmentAdvice">Vorrei un consiglio</option>
+            </select>
+          </label>
+          <label>
             <span data-i18n="formMessage">Messaggio</span>
             <textarea name="message" rows="5" required></textarea>
           </label>
@@ -205,7 +417,7 @@
       </svg>
     </a>
     <footer class="footer">
-      <span>© <span id="year"></span> Gaia Dessi Beauty · Cagliari</span>
+      <span>© <span id="year"></span> Gaia Dessi Beauty · Estetista e massaggi a Cagliari</span>
       <span class="footer-links">
         <a href="mailto:gaiadessi.io@gmail.com">gaiadessi.io@gmail.com</a>
         <a href="privacy.html">Privacy</a>
